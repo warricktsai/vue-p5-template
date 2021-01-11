@@ -10,12 +10,16 @@ import P5 from 'p5';
 export default {
   data() {
     return {
+      p5Canvas: null,
     }
   },
   created() {
     const sketch = p5 => {
-        let w = window.innerWidth;
-        let h = window.innerHeight;
+        let w = 500;
+        let h = 400;
+
+        // let w = window.innerWidth;
+        // let h = window.innerHeight;
 
         p5.setup = () => {
             p5.createCanvas(w, h, p5.WEBGL);
@@ -46,15 +50,22 @@ export default {
         };
     }
 
-    // eslint-disable-next-line no-unused-vars
-    let p5Canvas = new P5(sketch, 'p5Canvas');
+    this.p5Canvas = new P5(sketch, 'p5Canvas');
+  },
+  unmounted () {
+    this.p5Canvas = null;
   },
 }
 </script>
 
 <style>
 #p5Canvas {
-  width: 90vw;
+  width: 100vw;
   position: relative;
+}
+
+main {
+  margin: 0 auto;
+  width: 90vw;
 }
 </style>
