@@ -23,7 +23,7 @@ export default {
         var myFont;
 
         p5.preload = () => {
-          myFont = p5.loadFont('Inconsolata-Medium.ttf');
+          myFont = p5.loadFont('/fonts/Inconsolata-Medium.ttf');
         };
 
         p5.setup = () => {
