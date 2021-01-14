@@ -30,31 +30,12 @@ export default {
             p5.createCanvas(w, h, p5.WEBGL);
             p5.fill('#ED225D');
             p5.textFont(myFont);
-            p5.textSize(36);
-            p5.text('p5*js', 10, 50);
+            p5.textSize(64);
+            p5.text('p5*js', 0, 50);
         };
 
         p5.draw = () => {
             // p5.background(0);
-
-            // let locX = p5.mouseX - w / 2;
-            // let locY = p5.mouseY - h / 2;
-
-            // p5.ambientLight(50);
-            // p5.directionalLight(255, 0, 0, 0.25, 0.25, 0);
-            // p5.pointLight(0, 0, 255, locX, locY, 250);
-
-            // p5.push();
-            // p5.translate(-w / 4, 0, 0);
-            // p5.rotateZ(p5.frameCount * 0.02);
-            // p5.rotateX(p5.frameCount * 0.02);
-            // p5.specularMaterial(250);
-            // p5.box(100, 100, 100);
-            // p5.pop();
-
-            // p5.translate(w / 4, 0, 0);
-            // p5.ambientMaterial(250);
-            // p5.sphere(120, 64);
 
         };
     }
